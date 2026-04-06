@@ -10,13 +10,22 @@
         color: aquamarine;
     }    
     div{
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-family: "Comic Sans MS", "Comic Sans";
 
     }
     header{
         background: #1a192c;
         text-align: center;
         padding: 5px;
+    }
+    aside{
+        float: left;
+    }
+
+    body{
+        padding-left: 125px;
+        padding-right: 125px;
+        padding-top: 25px;
     }
 </style>
 <body>
@@ -27,40 +36,33 @@
             <h2 style="color:aquamarine">
                 hi! i'm ty! i created this site to share all of the things i make and also blog and stuff :) </h2>
         </header>
-
-        <nav style="background: #342c85;"> <!--Navigation Bar--> 
-            <div style="text-align: center;">
-            <button class="indexbutton" style="text-align: center;">
-                <h3>
-                    insert cool thing right here
-                </h3>
-            </button>
-            <a href="catpictures.html">
-            <button class="indexbutton" style="text-align: center;">
-                <h3> 
-                    cat pictures
-                </h3>
-            </button>
-            </a>
-            <button class="indexbutton" style="text-align: center;">
-                <h3>
-                    my collection
-                </h3>
-            </button>
-            <button class="indexbutton" style="text-align: center;">
-                <h3>
-                    media room
-                </h3>
-            </button>
-            <button class="indexbutton" style="text-align: center;">
-                <h3>
-                    projects
-                </h3>
-            </button>
-            </div>
-        </nav>
     </div>
 
+
+    <aside>
+        <nav style="background: #342c85;"> <!--Navigation Bar--> 
+            <div style="text-align: center;">
+            <h4 style="color: aliceblue; padding: 5px;">
+                cool stuff:
+            </h4>
+
+            <a href="catpictures.html">
+            <li class="indexbutton" style="text-align: center;">
+                <img src="icons/cat1.png", alt="cat pictures" width="96" height="106.5">
+            </li>
+            </a>
+
+            <a href="cds.html">
+            <li class="indexbutton" style="text-align: center;">
+                <img src="icons/cd1.png", alt="music collection" width="96" height="96">
+            </li>
+            </a>
+
+            
+
+            </div>
+        </nav>
+    </aside>
 
     
 </body>
