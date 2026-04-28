@@ -1,14 +1,7 @@
-header{
-    background-color:darkslategray;
-    text-align: center;
-    padding: 5px;
-}
-
 body{
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 1.5%;
-    background-image: url("bg/clouds5.jpg");
 }
 
 
@@ -21,6 +14,14 @@ body{
 #header{
     grid-column-start: 1;
     grid-column-end: 4;
+    background-color:darkslategray;
+    text-align: center;
+    padding: 5px;
+}
+
+#panel{
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 
 #footer{
