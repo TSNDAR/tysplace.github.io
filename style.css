@@ -1,6 +1,6 @@
 body{
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 18%;
+    padding-right: 18%;
     padding-top: 1.5%;
 }
 
@@ -8,12 +8,12 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 100px 3fr 2fr;
+    grid-template-columns: 100px 3fr 1fr 1fr 2fr;
 }
 
 #header{
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     background-color:darkslategray;
     text-align: center;
     padding: 5px;
@@ -21,12 +21,27 @@ body{
 
 #panel{
     grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-end: 6;
 }
 
 #footer{
     grid-column-start: 1;
+    grid-column-end:6;
+}
+
+#media{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+#blog{
+    grid-column-start: 2;
     grid-column-end: 4;
+}
+
+#aboutme{
+    grid-column-start: 4;
+    grid-column-end: 6;
 }
 
 
