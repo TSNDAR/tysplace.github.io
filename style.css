@@ -2,6 +2,7 @@ body{
     padding-left: 18%;
     padding-right: 18%;
     padding-top: 1.5%;
+    overflow: hidden; 
 }
 
 
@@ -12,11 +13,12 @@ body{
 }
 
 .albumphoto{
-    display: grid;
-    grid-template-rows: 200;
-    grid-template-columns: 200, 200, 200, 75;
-    background-color: cadetblue;
-    padding: 10px;
+    background-color: rgb(68, 68, 68);
+    padding: 5px;
+    height: 215px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
 
 }
 
@@ -52,4 +54,3 @@ body{
     grid-column-start: 4;
     grid-column-end: 6;
 }
-
