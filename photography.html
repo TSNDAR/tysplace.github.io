@@ -16,10 +16,34 @@
         color: black;
     }
 
+    .hamburger{
+        height:85%;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+
+    .hotdog{
+        height:65%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+    
+
 </style>
 
 <body>
 
+<div id="overlay" onclick="off()">
+    <img id="p5" class="hotdog" src="photography/IMG_4985_01.png">
+    <img id="p4" class="hamburger" src="photography/IMG_4986.png">
+    <img id="p3" class="hamburger" src="photography/IMG_4982.png">
+    <img id="p2" class="hotdog" src="photography/IMG_4956_01.png">
+    <img id="p1" class="hotdog" src="photography/varsity.png">
+</div>
 
 <nav>
    <a href="index.html">
@@ -30,26 +54,54 @@
 </nav>
 
 <header>
-    photography!
+    photography
 </header>
 
 <section>
-    <section style="padding-top: 10px; height: 215px;">
-        <h4>November 7, 2026</h4>
-        <section class="albumphoto">
-            <img src="photography/IMG_4956.JPG" height="200px">
-            <img src="photography/IMG_4969.JPG" height="200px">
-            <img src="photography/IMG_4974.JPG" height="200px">
-            <img src="photography/IMG_4978.JPG" height="200px">
-            <img src="photography/IMG_4981.JPG" height="200px">
-            <img src="photography/IMG_4982.JPG" height="200px">
-            <img src="photography/IMG_4985.JPG" height="200px">
-            <img src="photography/IMG_4986.JPG" height="200px">
-        </section>
-    </section>
+    <div style="padding-top: 10px; height: 215px;">
+        <h4>edited photos</h4>
+        <div class="albumphoto">
+            <img onclick="on(), p5()" src="photography/IMG_4985_01.png" height="200px">
+            <img onclick="on(), p4()" src="photography/IMG_4986.png" height="200px">
+            <img onclick="on(), p3()" src="photography/IMG_4982.png" height="200px">
+            <img onclick="on(), p2()" src="photography/IMG_4956_01.png" height="200px">
+            <img onclick="on(), p1()" src="photography/varsity.png" height="200px">
+        </div>
+    </div>
 
 </section>
 
 </body>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("p1").style.display = "none";
+  document.getElementById("p2").style.display = "none";
+  document.getElementById("p3").style.display = "none";
+  document.getElementById("p4").style.display = "none";
+  document.getElementById("p5").style.display = "none";
+} 
+
+function p1() {
+    document.getElementById("p1").style.display = "block";
+}
+function p2() {
+    document.getElementById("p2").style.display = "block";
+}
+function p3() {
+    document.getElementById("p3").style.display = "block";
+}
+function p4() {
+    document.getElementById("p4").style.display = "block";
+}
+function p5() {
+    document.getElementById("p5").style.display = "block";
+}
+</script>
 
 </html>
