@@ -31,6 +31,14 @@
         margin-right: auto;
         display: none;
     }
+
+    .quad{
+        height:75%;
+        margin-top: 3.5%;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
     
     #overlay{
     position: fixed;
@@ -50,6 +58,9 @@
 <body>
 
 <div id="overlay" onclick="off()">
+    <img id="p8" class="quad" src="photography/holysteppers.PNG">
+    <img id="p7" class="hamburger" src="photography/IMG_4649_01.png">
+    <img id="p6" class="hamburger" src="photography/IMG_4657_01.png">
     <img id="p5" class="hotdog" src="photography/IMG_4985_01.png">
     <img id="p4" class="hamburger" src="photography/IMG_4986.png">
     <img id="p3" class="hamburger" src="photography/IMG_4982.png">
@@ -71,13 +82,15 @@
 
 <section>
     <div style="padding-top: 10px; height: 215px;">
-        <h4>edited photos</h4>
         <div class="albumphoto">
             <img onclick="on(), p5()" src="photography/IMG_4985_01.png" height="200px">
             <img onclick="on(), p4()" src="photography/IMG_4986.png" height="200px">
             <img onclick="on(), p3()" src="photography/IMG_4982.png" height="200px">
             <img onclick="on(), p2()" src="photography/IMG_4956_01.png" height="200px">
+            <img onclick="on(), p6()" src="photography/IMG_4657_01.png" height="200px">
+            <img onclick="on(), p7()" src="photography/IMG_4649_01.png" height="200px">
             <img onclick="on(), p1()" src="photography/varsity.png" height="200px">
+            <img onclick="on(), p8()" src="photography/holysteppers.PNG" height="200px">
         </div>
     </div>
 
@@ -97,6 +110,9 @@ function off() {
   document.getElementById("p3").style.display = "none";
   document.getElementById("p4").style.display = "none";
   document.getElementById("p5").style.display = "none";
+  document.getElementById("p6").style.display = "none";
+  document.getElementById("p7").style.display = "none";
+  document.getElementById("p8").style.display = "none";
 } 
 
 function p1() {
@@ -112,7 +128,17 @@ function p4() {
     document.getElementById("p4").style.display = "block";
 }
 function p5() {
+
     document.getElementById("p5").style.display = "block";
+}
+function p6() {
+    document.getElementById("p6").style.display = "block";
+}
+function p7() {
+    document.getElementById("p7").style.display = "block";
+}
+function p8() {
+    document.getElementById("p8").style.display = "block";
 }
 </script>
 
